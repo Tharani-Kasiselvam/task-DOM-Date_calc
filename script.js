@@ -14,6 +14,7 @@ btn.addEventListener("click",date_result)
 let res = document.createElement("div")
 res.className="main1"
 res.innerHTML=""
+
 prnt_div.append(inp_dat,btn,res)
 document.body.append(prnt_div)
 
@@ -61,12 +62,9 @@ function date_result(){
         `
     }
     else{
-        let alert = document.createElement("div")
-        alert.className="alert alert-primary"
-        alert.setAttribute("role","alert")
-        alert.innerHTML("Select Valid Date!!")
-        prnt_div.append(inp_dat,btn,alert)
-        document.body.append(prnt_div)
+       res.innerHTML="<b>SELECT VALID DATE!!!<b>"
+        // prnt_div.append(inp_dat,btn,alert)
+        // document.body.append(prnt_div)
     }
 }
 
